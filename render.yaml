@@ -8,13 +8,11 @@ services:
     envVars:
       - key: CI_ENVIRONMENT
         value: production
-      - key: app.baseURL
+      - key: APP_BASE_URL
         value: https://tasks-for-today-lexxxx12.onrender.com/
-      - key: app.indexPage
-        value: ""
-      - key: app.appTimezone
+      - key: APP_TIMEZONE
         value: Asia/Manila
-      - key: developer.name
+      - key: DEVELOPER_NAME
         value: Lexxxx12
-      - key: developer.course
+      - key: DEVELOPER_COURSE
         value: IT0049 Web System Technologies

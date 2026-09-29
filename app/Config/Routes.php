@@ -3,7 +3,7 @@
 use CodeIgniter\Router\RouteCollection;
 
 /** @var RouteCollection $routes */
-$routes->get('/', 'Home::index');
+$routes->match(['get', 'head'], '/', 'Home::index');
 $routes->get('tasks', 'Tasks::index');
 $routes->get('tasks/new', 'Tasks::create');
 $routes->post('tasks', 'Tasks::store');

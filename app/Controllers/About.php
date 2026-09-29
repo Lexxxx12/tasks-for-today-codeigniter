@@ -9,8 +9,8 @@ class About extends BaseController
         return view('pages/about', [
             'pageTitle' => 'About',
             'activePage' => 'about',
-            'developerName' => env('developer.name', 'Student Developer'),
-            'developerCourse' => env('developer.course', 'IT0049 Web System Technologies'),
+            'developerName' => getenv('DEVELOPER_NAME') ?: env('developer.name', 'Lexxxx12'),
+            'developerCourse' => getenv('DEVELOPER_COURSE') ?: env('developer.course', 'IT0049 Web System Technologies'),
         ]);
     }
 }

@@ -40,7 +40,7 @@ class App extends BaseConfig
      * something else. If you have configured your web server to remove this file
      * from your site URIs, set this variable to an empty string.
      */
-    public string $indexPage = 'index.php';
+    public string $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -134,6 +134,21 @@ class App extends BaseConfig
      *      supported by PHP.
      */
     public string $appTimezone = 'UTC';
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        $baseURL = getenv('APP_BASE_URL');
+        if (is_string($baseURL) && $baseURL !== '') {
+            $this->baseURL = rtrim($baseURL, '/') . '/';
+        }
+
+        $timezone = getenv('APP_TIMEZONE');
+        if (is_string($timezone) && $timezone !== '') {
+            $this->appTimezone = $timezone;
+        }
+    }
 
     /**
      * --------------------------------------------------------------------------
