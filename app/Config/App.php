@@ -140,6 +140,9 @@ class App extends BaseConfig
         parent::__construct();
 
         $baseURL = getenv('APP_BASE_URL');
+        if ((! is_string($baseURL) || $baseURL === '') && getenv('RENDER') === 'true') {
+            $baseURL = 'https://tasks-for-today-lexxxx12.onrender.com/';
+        }
         if (is_string($baseURL) && $baseURL !== '') {
             $this->baseURL = rtrim($baseURL, '/') . '/';
         }
