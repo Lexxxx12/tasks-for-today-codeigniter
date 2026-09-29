@@ -6,6 +6,7 @@ A polished CodeIgniter 4 task dashboard created for IT0049. The application incl
 
 - GitHub: https://github.com/Lexxxx12/tasks-for-today-codeigniter
 - Live application: https://tasks-for-today-lexxxx12.onrender.com
+- Assignment document: [MEDINA IT0049 TSA1 Tasks for Today](docs/MEDINA-IT0049-TSA1-Tasks-for-Today.pdf)
 
 ## Requirements
 
