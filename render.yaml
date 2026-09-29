@@ -14,10 +14,6 @@ services:
         value: ""
       - key: app.appTimezone
         value: Asia/Manila
-      - key: database.default.database
-        value: database.sqlite
-      - key: database.default.DBDriver
-        value: SQLite3
       - key: developer.name
         value: Lexxxx12
       - key: developer.course
