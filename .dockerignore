@@ -1,0 +1,11 @@
+.git
+.env
+vendor
+tests
+build
+writable/cache/*
+writable/debugbar/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+writable/database.sqlite

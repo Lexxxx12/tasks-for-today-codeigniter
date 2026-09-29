@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: tasks-for-today-lexxxx12
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: CI_ENVIRONMENT
+        value: production
+      - key: app.baseURL
+        value: https://tasks-for-today-lexxxx12.onrender.com/
+      - key: app.indexPage
+        value: ""
+      - key: app.appTimezone
+        value: Asia/Manila
+      - key: database.default.database
+        value: database.sqlite
+      - key: database.default.DBDriver
+        value: SQLite3
+      - key: developer.name
+        value: Lexxxx12
+      - key: developer.course
+        value: IT0049 Web System Technologies
